@@ -1,0 +1,18 @@
+{
+  "name": "doguito-testes",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "jest --runInBand",
+    "test:unit": "jest --runInBand tests/unit.test.js",
+    "test:integration": "jest --runInBand tests/integration.test.js"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "jsdom": "^26.1.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": ["**/tests/**/*.test.js"]
+  }
+}
